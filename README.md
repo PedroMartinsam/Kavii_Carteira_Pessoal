@@ -3,7 +3,8 @@
 
 O nome Kavii foi pensado para transmitir modernidade, simplicidade e facilidade de memorização. A sonoridade curta e marcante remete a algo tecnológico e inovador, enquanto o duplo “i” no final reforça a ideia de pessoalidade e conexão direta com o usuário. É um nome versátil, que pode se destacar tanto no ambiente digital quanto em materiais de apresentação e marketing.
 📝 Diagrama de Classe
-<img width="819" height="682" alt="image" src="https://github.com/user-attachments/assets/15a71cf6-e40a-421d-a4f4-f7406bd51a02" />
+<img width="714" height="532" alt="image" src="https://github.com/user-attachments/assets/30697fc5-e63d-455d-b9e1-aa997dfc550c" />
+
 
 📝Descrição do Diagrama – Kavii
 O diagrama de classes do Kavii – Carteira Pessoal representa a estrutura principal do sistema, destacando as entidades e suas responsabilidades:
