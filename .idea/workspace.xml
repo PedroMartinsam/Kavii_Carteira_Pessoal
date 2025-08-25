@@ -5,15 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c40f293b-b97c-4b9f-baf5-c2c917776c8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/config/DevConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Kavii.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/security/JWTAuthenticatorFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/KaviiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/KaviiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/config/DevConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/config/DevConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/config/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/config/TestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/Banco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/CentroCusto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/CentroCusto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/ObjetivoFinanceiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/ObjetivoFinanceiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/BancoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/BancoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/CentroCustoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/CentroCustoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/ContaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/ContaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/CredenciaisDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/CredenciaisDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/ObjetivoFinanceiroDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/PessoaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/PessoaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/TokenDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/TokenDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/UsuarioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/dtos/UsuarioDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/enums/StatusObjetivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/enums/StatusObjetivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/enums/TipoConta.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/domains/enums/TipoConta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/repositories/BancoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/repositories/BancoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/repositories/CentroCustoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/repositories/CentroCustoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/repositories/ContaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/repositories/ContaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/repositories/ObjetivoFinanceiroRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/repositories/ObjetivoFinanceiroRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/repositories/PessoaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/repositories/PessoaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/repositories/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/repositories/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/BancoResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/BancoResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/CentroCustoResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/CentroCustoResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/ContaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/ContaResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/ObjetivoFinanceiroResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/ObjetivoFinanceiroResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/PessoaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/PessoaResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/UsuarioResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/UsuarioResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/exceptions/FieldMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/exceptions/FieldMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/exceptions/ResourceExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/exceptions/ResourceExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/exceptions/StandardError.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/exceptions/StandardError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/exceptions/ValidationError.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/resources/exceptions/ValidationError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/security/JWTAuthenticadorFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/security/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/security/JWTUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/security/UserSS.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/security/UserSS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/BancoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/BancoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/CentroCustoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/CentroCustoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/ContaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/ContaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/DBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/DBService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/PessoaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/PessoaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/UserDetailsServiceImpI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/UserDetailsServiceImpI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/exceptions/DataIntegrityViolationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/exceptions/DataIntegrityViolationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/exceptions/ObjectNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/java/com/Carteira_Pessoal/Kavii/services/exceptions/ObjectNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kavii/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Kavii/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +68,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Exception" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -50,6 +93,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Kavii&quot;
   }
