@@ -1,8 +1,8 @@
 package com.Carteira_Pessoal.Kavii.services;
 
-import com.sistema.moneymind.domains.Usuario;
-import com.sistema.moneymind.repositories.UsuarioRepository;
-import com.sistema.moneymind.security.UserSS;
+import com.Carteira_Pessoal.Kavii.domains.Usuario;
+import com.Carteira_Pessoal.Kavii.repositories.UsuarioRepository;
+import com.Carteira_Pessoal.Kavii.security.UserSS;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class UserDetailsServiceImpl implements UserDetailsService {
+public class UserDetailsServiceImpI implements UserDetailsService {
 
     private final UsuarioRepository usuarioRepo;
 

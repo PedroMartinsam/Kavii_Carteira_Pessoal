@@ -32,11 +32,11 @@ public class CentroCustoDTO {
         this.idCentro = idCentro;
     }
 
-    public @NotNull(message = "O campo descricaoCentro não pode ser nulo") @NotBlank(message = "O campo descricaoCentro não pode estar vazio") String getDescricaoCentro() {
+    public @NotNull(message = "O campo descricaoCentro não pode ser nulo") @NotBlank(message = "O campo descricao Centro não pode estar vazio") String getDescricaoCentro() {
         return descricaoCentro;
     }
 
-    public void setDescricaoCentro(@NotNull(message = "O campo descricaoCentro não pode ser nulo") @NotBlank(message = "O campo descricaoCentro não pode estar vazio") String descricaoCentro) {
+    public void setDescricaoCentro(@NotNull(message = "O campo descricao Centro não pode ser nulo") @NotBlank(message = "O campo descricao Centro não pode estar vazio") String descricaoCentro) {
         this.descricaoCentro = descricaoCentro;
     }
 

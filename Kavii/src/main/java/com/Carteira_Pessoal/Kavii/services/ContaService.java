@@ -28,7 +28,7 @@ public class ContaService {
     private BancoRepository bancoRepo;
 
     @Autowired
-    private MetaFinanceiraRepository metaRepo;
+    private ObjetivoFinanceiroRepository ObjetivoRepo;
 
     @Autowired
     private ContaRepository contaRepo;
@@ -72,9 +72,9 @@ public class ContaService {
             throw new DataIntegrityViolationException("Banco - " + dto.getBanco() + "não esta cadastrado");
         }
 
-        Optional<MetaFinanceira> metaFinanceira = metaRepo.findById(dto.getMetaFinanceira());
-        if(!metaFinanceira.isPresent()){
-            throw new DataIntegrityViolationException("Meta Financeira - " + dto.getMetaFinanceira() + "não esta cadastrado");
+        Optional<ObjetivoFinanceiro> objetivoFinanceiro = ObjetivoRepo.findById(dto.getObjetivoFinanceiro());
+        if(!ObjetivoFinanceiro.isPresent()){
+            throw new DataIntegrityViolationException("Objetivo Financeiro- " + dto.getObjetivoFinanceiro() + "não esta cadastrado");
         }
     }
 

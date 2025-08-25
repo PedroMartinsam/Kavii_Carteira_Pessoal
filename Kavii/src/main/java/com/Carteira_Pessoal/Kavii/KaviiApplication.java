@@ -14,7 +14,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 public class KaviiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MoneymindApplication.class, args);
+        SpringApplication.run(KaviiApplication.class, args);
     }
 
 }
