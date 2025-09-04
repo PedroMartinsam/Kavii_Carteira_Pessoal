@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Kavii/src/main/main.iml" filepath="$PROJECT_DIR$/Kavii/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kavii/src/test/test.iml" filepath="$PROJECT_DIR$/Kavii/src/test/test.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/.idea/Kavii_Carteira_Pessoal-main.iml" filepath="$PROJECT_DIR$/.idea/Kavii_Carteira_Pessoal-main.iml" />
->>>>>>> 4939b6f (Atualização no security)
     </modules>
   </component>
 </project>
