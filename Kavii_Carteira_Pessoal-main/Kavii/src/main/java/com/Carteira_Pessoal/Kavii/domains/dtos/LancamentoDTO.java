@@ -1,100 +1,92 @@
 package com.Carteira_Pessoal.Kavii.domains.dtos;
 
 import com.Carteira_Pessoal.Kavii.domains.Lancamento;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-
+import jakarta.validation.constraints.NotBlank;
+import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Objects;
 
-public class LancamentoDTO {
+public class LancamentoDTO implements Serializable {
+    private static final long serialVersionUID = 1L;
 
-    private int id;
+    private Integer id;
 
-    @NotNull(message = "O campo descricao não pode ser nulo")
-    @NotBlank(message = "O campo descricao não pode ser vazio")
+    @NotNull(message = "Preenchimento obrigatório")
+    @NotBlank(message = "Preenchimento obrigatório")
     private String descricao;
 
-    @NotNull(message = "O campo parcela não pode ser nulo")
+    @NotNull(message = "Preenchimento obrigatório")
     private Integer parcela;
 
-    @NotNull(message = "O campo dataLancamento não pode ser nulo")
+    @NotNull(message = "Preenchimento obrigatório")
     private LocalDate dataLancamento;
 
-    @NotNull(message = "O campo dataVencimento não pode ser nulo")
+    @NotNull(message = "Preenchimento obrigatório")
     private LocalDate dataVencimento;
 
     private LocalDate dataBaixa;
 
-    @NotNull(message = "O campo valorDocumento não pode ser nulo")
-    private double valorDocumento;
+    @NotNull(message = "Preenchimento obrigatório")
+    private Double valorDocumento;
 
-    private int tipoLancamento;
+    @NotNull(message = "Preenchimento obrigatório")
+    private Integer tipoLancamento;
 
-    private int situacao;
+    @NotNull(message = "Preenchimento obrigatório")
+    private Integer situacao;
 
     public LancamentoDTO() {
     }
 
-    public LancamentoDTO(Lancamento Lancamento) {
-        this.id = Lancamento.getId();
-        this.descricao = Lancamento.getDescricao();
-        this.parcela = Lancamento.getParcela();
-        this.dataLancamento = Lancamento.getDataLancamento();
-        this.dataVencimento = Lancamento.getDataVencimento();
-        this.dataBaixa = Lancamento.getDataBaixa();
-        this.valorDocumento = Lancamento.getValorDocumento();
-        this.tipoLancamento = Lancamento.getTipoLancamento().getId();
-        this.situacao = Lancamento.getSituacao().getId();
+    public LancamentoDTO(Lancamento obj) {
+        this.id = obj.getId();
+        this.descricao = obj.getDescricao();
+        this.parcela = obj.getParcela();
+        this.dataLancamento = obj.getDataLancamento();
+        this.dataVencimento = obj.getDataVencimento();
+        this.dataBaixa = obj.getDataBaixa();
+        this.valorDocumento = obj.getValorDocumento();
+        this.tipoLancamento = obj.getTipoLancamento().getId();
+        this.situacao = obj.getSituacao().getId();
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public @NotNull(message = "O campo descricao não pode ser nulo")
-    @NotBlank(message = "O campo descricao não pode ser vazio")
-    String getDescricao() {
+    public String getDescricao() {
         return descricao;
     }
 
-    public void setDescricao(@NotNull(message = "O campo descricao não pode ser nulo")
-                             @NotBlank(message = "O campo descricao não pode ser vazio")
-                             String descricao) {
+    public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
 
-    public @NotNull(message = "O campo parcela não pode ser nulo")
-    Integer getParcela() {
+    public Integer getParcela() {
         return parcela;
     }
 
-    public void setParcela(@NotNull(message = "O campo parcela não pode ser nulo")
-                           Integer parcela) {
+    public void setParcela(Integer parcela) {
         this.parcela = parcela;
     }
 
-    public @NotNull(message = "O campo dataLancamento não pode ser nulo")
-    LocalDate getDataLancamento() {
+    public LocalDate getDataLancamento() {
         return dataLancamento;
     }
 
-    public void setDataLancamento(@NotNull(message = "O campo dataLancamento não pode ser nulo")
-                                  LocalDate dataLancamento) {
+    public void setDataLancamento(LocalDate dataLancamento) {
         this.dataLancamento = dataLancamento;
     }
 
-    public @NotNull(message = "O campo dataVencimento não pode ser nulo")
-    LocalDate getDataVencimento() {
+    public LocalDate getDataVencimento() {
         return dataVencimento;
     }
 
-    public void setDataVencimento(@NotNull(message = "O campo dataVencimento não pode ser nulo")
-                                  LocalDate dataVencimento) {
+    public void setDataVencimento(LocalDate dataVencimento) {
         this.dataVencimento = dataVencimento;
     }
 
@@ -106,42 +98,28 @@ public class LancamentoDTO {
         this.dataBaixa = dataBaixa;
     }
 
-    public @NotNull(message = "O campo valorDocumento não pode ser nulo")
-    Double getValorDocumento() {
+    public Double getValorDocumento() {
         return valorDocumento;
     }
 
-    public void setValorDocumento(@NotNull(message = "O campo valorDocumento não pode ser nulo")
-                                  Double valorDocumento) {
+    public void setValorDocumento(Double valorDocumento) {
         this.valorDocumento = valorDocumento;
     }
 
-
-    public int getTipoLancamento() {
+    public Integer getTipoLancamento() {
         return tipoLancamento;
     }
 
-    public void setTipoLancamento(int tipoLancamento) {
+    public void setTipoLancamento(Integer tipoLancamento) {
         this.tipoLancamento = tipoLancamento;
     }
 
-    public int getSituacao() {
+    public Integer getSituacao() {
         return situacao;
     }
 
-    public void setSituacao(int situacao) {
+    public void setSituacao(Integer situacao) {
         this.situacao = situacao;
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        LancamentoDTO that = (LancamentoDTO) o;
-        return id == that.id && parcela == that.parcela && Double.compare(valorDocumento, that.valorDocumento) == 0 && tipoLancamento == that.tipoLancamento && situacao == that.situacao && Objects.equals(descricao, that.descricao) && Objects.equals(dataLancamento, that.dataLancamento) && Objects.equals(dataVencimento, that.dataVencimento) && Objects.equals(dataBaixa, that.dataBaixa);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, descricao, parcela, dataLancamento, dataVencimento, dataBaixa, valorDocumento, tipoLancamento, situacao);
-    }
 }
+

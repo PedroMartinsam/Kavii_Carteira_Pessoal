@@ -27,7 +27,7 @@ public class ObjetivoFinanceiroResource {
 
     @GetMapping(value = "/{id}")
     public ResponseEntity<ObjetivoFinanceiroDTO> findById(@PathVariable Long id){
-        ObjetivoFinanceiro obj = this.objetivoFinanceiroService.findbyId(id);
+        ObjetivoFinanceiro obj = this.ObjetivoFinanceiroService.findbyId(id);
         return ResponseEntity.ok().body(new ObjetivoFinanceiroDTO(obj));
     }
 

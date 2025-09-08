@@ -5,7 +5,8 @@ import com.Carteira_Pessoal.Kavii.repositories.ObjetivoFinanceiroRepository;
 import com.Carteira_Pessoal.Kavii.services.exceptions.DataIntegrityViolationException;
 import com.Carteira_Pessoal.Kavii.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.query.Objetivo;
+
+import com.Carteira_Pessoal.Kavii.domains.dtos.ObjetivoFinanceiroDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -43,7 +44,7 @@ public class ObjetivoFinanceiroService {
         objDto.setIdObjetivo(id);
         ObjetivoFinanceiro oldObj = findbyId(id);
         oldObj = new ObjetivoFinanceiro(objDto);
-        return objetivoRepo.save(oldObj);
+        return ObjetivoRepo.save(oldObj);
     }
 
     public void delete(Long id){

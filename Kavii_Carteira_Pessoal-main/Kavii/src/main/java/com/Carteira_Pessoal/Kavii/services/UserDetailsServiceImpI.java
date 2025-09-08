@@ -15,7 +15,7 @@ public class UserDetailsServiceImpI implements UserDetailsService {
 
     private final UsuarioRepository usuarioRepo;
 
-    public UserDetailsServiceImpl(UsuarioRepository usuarioRepository){
+    public UserDetailsServiceImpI(UsuarioRepository usuarioRepository){
         this.usuarioRepo = usuarioRepository;
     }
 

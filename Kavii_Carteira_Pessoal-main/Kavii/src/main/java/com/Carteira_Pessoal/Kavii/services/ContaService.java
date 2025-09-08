@@ -2,12 +2,12 @@ package com.Carteira_Pessoal.Kavii.services;
 
 import com.Carteira_Pessoal.Kavii.domains.Banco;
 import com.Carteira_Pessoal.Kavii.domains.Conta;
-import com.Carteira_Pessoal.Kavii.domains.ObjetivoFinanceira;
+import com.Carteira_Pessoal.Kavii.domains.ObjetivoFinanceiro;
 import com.Carteira_Pessoal.Kavii.domains.Usuario;
 import com.Carteira_Pessoal.Kavii.domains.dtos.ContaDTO;
 import com.Carteira_Pessoal.Kavii.repositories.BancoRepository;
 import com.Carteira_Pessoal.Kavii.repositories.ContaRepository;
-import com.Carteira_Pessoal.Kavii.repositories.ObjetivoFinanceiraRepository;
+
 import com.Carteira_Pessoal.Kavii.repositories.ObjetivoFinanceiroRepository;
 import com.Carteira_Pessoal.Kavii.repositories.UsuarioRepository;
 import com.Carteira_Pessoal.Kavii.services.exceptions.DataIntegrityViolationException;
@@ -74,7 +74,7 @@ public class ContaService {
         }
 
         Optional<ObjetivoFinanceiro> objetivoFinanceiro = ObjetivoRepo.findById(dto.getObjetivoFinanceiro());
-        if(!ObjetivoFinanceiro.isPresent()){
+        if(!objetivoFinanceiro.isPresent()){
             throw new DataIntegrityViolationException("Objetivo Financeiro- " + dto.getObjetivoFinanceiro() + "não esta cadastrado");
         }
     }

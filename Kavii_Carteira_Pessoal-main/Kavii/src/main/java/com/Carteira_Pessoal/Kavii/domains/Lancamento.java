@@ -2,7 +2,6 @@ package com.Carteira_Pessoal.Kavii.domains;
 
 import com.Carteira_Pessoal.Kavii.domains.dtos.LancamentoDTO;
 import com.Carteira_Pessoal.Kavii.domains.enums.Situacao;
-import com.Carteira_Pessoal.Kavii.domains.enums.StatusObjetivo;
 import com.Carteira_Pessoal.Kavii.domains.enums.TipoLancamento;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
@@ -13,19 +12,19 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 @Entity
-@Table(name = "lançamento")
+@Table(name = "lancamento")
 public class Lancamento {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_lançamento")
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
     @NotNull
     @NotBlank
     private String descricao;
 
     @NotNull
-    private int parcela;
+    private Integer parcela;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataLancamento;
@@ -37,20 +36,20 @@ public class Lancamento {
     private LocalDate dataBaixa;
 
     @NotNull
-    private double valorDocumento;
+    private Double valorDocumento;
 
     @Enumerated(EnumType.ORDINAL)
-    @JoinColumn(name = "tipoLançamento")
+    @JoinColumn(name = "tipo_lancamento_id")
     private TipoLancamento tipoLancamento;
 
     @Enumerated(EnumType.ORDINAL)
-    @JoinColumn(name = "Situação")
+    @JoinColumn(name = "situacao_id")
     private Situacao situacao;
 
     public Lancamento() {
     }
 
-    public Lancamento(int id, String descricao, int parcela, LocalDate dataLancamento, LocalDate dataVencimento, LocalDate dataBaixa, TipoLancamento tipoLancamento, double valorDocumento, Situacao situacao) {
+    public Lancamento(Integer id, String descricao, Integer parcela, LocalDate dataLancamento, LocalDate dataVencimento, LocalDate dataBaixa, TipoLancamento tipoLancamento, Double valorDocumento, Situacao situacao) {
         this.id = id;
         this.descricao = descricao;
         this.parcela = parcela;
@@ -74,11 +73,11 @@ public class Lancamento {
         this.dataBaixa = dto.getDataBaixa();
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -90,11 +89,11 @@ public class Lancamento {
         this.descricao = descricao;
     }
 
-    public int getParcela() {
+    public Integer getParcela() {
         return parcela;
     }
 
-    public void setParcela(int parcela) {
+    public void setParcela(Integer parcela) {
         this.parcela = parcela;
     }
 
@@ -122,11 +121,11 @@ public class Lancamento {
         this.dataBaixa = dataBaixa;
     }
 
-    public double getValorDocumento() {
+    public Double getValorDocumento() {
         return valorDocumento;
     }
 
-    public void setValorDocumento(double valorDocumento) {
+    public void setValorDocumento(Double valorDocumento) {
         this.valorDocumento = valorDocumento;
     }
 
@@ -148,13 +147,14 @@ public class Lancamento {
 
     @Override
     public boolean equals(Object o) {
+        if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Lancamento that = (Lancamento) o;
-        return id == that.id && parcela == that.parcela && Double.compare(valorDocumento, that.valorDocumento) == 0 && Objects.equals(descricao, that.descricao) && Objects.equals(dataLancamento, that.dataLancamento) && Objects.equals(dataVencimento, that.dataVencimento) && Objects.equals(dataBaixa, that.dataBaixa) && tipoLancamento == that.tipoLancamento && situacao == that.situacao;
+        return Objects.equals(id, that.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, descricao, parcela, dataLancamento, dataVencimento, dataBaixa, valorDocumento, tipoLancamento, situacao);
+        return Objects.hash(id);
     }
 }

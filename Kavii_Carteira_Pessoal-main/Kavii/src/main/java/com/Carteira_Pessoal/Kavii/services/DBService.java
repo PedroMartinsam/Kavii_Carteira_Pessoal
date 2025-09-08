@@ -3,6 +3,8 @@ package com.Carteira_Pessoal.Kavii.services;
 import com.Carteira_Pessoal.Kavii.domains.*;
 import com.Carteira_Pessoal.Kavii.domains.enums.StatusObjetivo;
 import com.Carteira_Pessoal.Kavii.domains.enums.TipoConta;
+import com.Carteira_Pessoal.Kavii.domains.enums.TipoLancamento;
+import com.Carteira_Pessoal.Kavii.domains.enums.Situacao;
 import com.Carteira_Pessoal.Kavii.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -30,6 +32,9 @@ public class DBService {
 
     @Autowired
     private ContaRepository contaRepo;
+
+    @Autowired
+    private LancamentoRepository lancamentoRepo;
 
     @Autowired
     private PasswordEncoder encoder;
@@ -74,6 +79,12 @@ public class DBService {
 
         contaRepo.save(conta01);
         contaRepo.save(conta02);
+
+        Lancamento lancamento01 = new Lancamento(null, "Aluguel", 1, LocalDate.of(2023, 1, 5), LocalDate.of(2023, 1, 10), null, TipoLancamento.DEBITO, 1500.0, Situacao.ABERTA);
+        Lancamento lancamento02 = new Lancamento(null, "Salário", 1, LocalDate.of(2023, 1, 20), LocalDate.of(2023, 1, 20), LocalDate.of(2023, 1, 20), TipoLancamento.CREDITO, 3000.0, Situacao.BAIXADA);
+
+        lancamentoRepo.save(lancamento01);
+        lancamentoRepo.save(lancamento02);
 
     }
 

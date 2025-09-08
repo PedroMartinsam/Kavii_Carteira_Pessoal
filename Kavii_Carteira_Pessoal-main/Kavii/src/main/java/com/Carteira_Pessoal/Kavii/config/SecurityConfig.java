@@ -2,8 +2,8 @@ package com.Carteira_Pessoal.Kavii.config;
 
 
 import com.Carteira_Pessoal.Kavii.security.JWTAuthenticatorFilter;
-import com.Carteira_Pessoal.Kavii.JWTUtils;
-import com.Carteira_Pessoal.Kavii.services.UserDetailsServiceImpl;
+import com.Carteira_Pessoal.Kavii.security.JWTUtils;
+import com.Carteira_Pessoal.Kavii.services.UserDetailsServiceImpI;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
@@ -30,9 +30,9 @@ public class SecurityConfig {
 
     private final Environment env;
     private final JWTUtils jwtUtils;
-    private final UserDetailsServiceImpl userDetailsService;
+    private final UserDetailsServiceImpI userDetailsService;
 
-    public SecurityConfig(Environment env, JWTUtils jwtUtils, UserDetailsServiceImpl userDetailsService) {
+    public SecurityConfig(Environment env, JWTUtils jwtUtils, UserDetailsServiceImpI userDetailsService) {
         this.env = env;
         this.jwtUtils = jwtUtils;
         this.userDetailsService = userDetailsService;

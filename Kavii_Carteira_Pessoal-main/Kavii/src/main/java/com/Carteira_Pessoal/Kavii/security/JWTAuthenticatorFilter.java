@@ -1,6 +1,6 @@
 package com.Carteira_Pessoal.Kavii.security;
 
-import com.Carteira_Pessoal.Kavii.services.UserDetailsServiceImpl;
+import com.Carteira_Pessoal.Kavii.services.UserDetailsServiceImpI;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -16,9 +16,9 @@ public class JWTAuthenticatorFilter extends OncePerRequestFilter {
 
 
     private final JWTUtils jwtUtils;
-    private final UserDetailsServiceImpl userDetailsService;
+    private final UserDetailsServiceImpI userDetailsService;
 
-    public JWTAuthenticatorFilter(JWTUtils jwtUtils, UserDetailsServiceImpl userDetailsService){
+    public JWTAuthenticatorFilter(JWTUtils jwtUtils, UserDetailsServiceImpI userDetailsService){
         this.jwtUtils = jwtUtils;
         this.userDetailsService = userDetailsService;
     }
@@ -47,3 +47,5 @@ public class JWTAuthenticatorFilter extends OncePerRequestFilter {
 
 
 }
+
+
